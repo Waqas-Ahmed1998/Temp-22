@@ -476,6 +476,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 7%;
 }
 
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[0\%\] {
+  top: 0%;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -487,6 +495,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-2 {
@@ -521,6 +533,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[95\%\] {
@@ -573,12 +589,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
 .border {
   border-width: 1px;
 }
 
 .border-8 {
   border-width: 8px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-\[\#3a0ca3\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(58 12 163 / var(--tw-border-opacity));
 }
 
 .border-gray-300 {
@@ -590,18 +624,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
-.bg-\[\#EFEFEF\] {
+.bg-\[\#444\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+  background-color: rgb(68 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
   background-color: transparent;
 }
 
-.bg-\[\#FFE300\] {
+.bg-\[\#140a2a\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 227 0 / var(--tw-bg-opacity));
+  background-color: rgb(20 10 42 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#3a0ca3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 12 163 / var(--tw-bg-opacity));
 }
 
 .py-10 {
@@ -612,6 +651,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-4 {
@@ -667,9 +711,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.text-\[\#f8f9fa\] {
+  --tw-text-opacity: 1;
+  color: rgb(248 249 250 / var(--tw-text-opacity));
+}
+
+.text-\[\#f1e9e9\] {
+  --tw-text-opacity: 1;
+  color: rgb(241 233 233 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#2d2d2d\] {
   --tw-text-opacity: 1;
   color: rgb(45 45 45 / var(--tw-text-opacity));
+}
+
+.text-\[\#fbf9f9\] {
+  --tw-text-opacity: 1;
+  color: rgb(251 249 249 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -709,6 +777,7 @@ body {
 }
 
 .subheading {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 input {
@@ -716,9 +785,11 @@ input {
 
 .heading {
   /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Libre Baskerville', serif;
 }
 
 .call{
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .disclaimer {
@@ -751,14 +822,9 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Tajawal', sans-serif;
 font-family: 'Vazirmatn', sans-serif;*/
 
-.hover\:animate-none:hover {
-  -webkit-animation: none;
-          animation: none;
-}
-
-.hover\:bg-\[\#dfcb34\]:hover {
+.hover\:bg-\[\#40208b\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(223 203 52 / var(--tw-bg-opacity));
+  background-color: rgb(64 32 139 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-l:hover {
@@ -790,6 +856,10 @@ font-family: 'Vazirmatn', sans-serif;*/
   .iphone6\:top-\[15\%\] {
     top: 15%;
   }
+
+  .iphone6\:top-\[10\%\] {
+    top: 10%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -819,31 +889,6 @@ font-family: 'Vazirmatn', sans-serif;*/
     max-width: 1120px;
   }
 
-  @-webkit-keyframes wiggle {
-    0%, 100% {
-      transform: rotate(-3deg);
-    }
-
-    50% {
-      transform: rotate(3deg);
-    }
-  }
-
-  @keyframes wiggle {
-    0%, 100% {
-      transform: rotate(-3deg);
-    }
-
-    50% {
-      transform: rotate(3deg);
-    }
-  }
-
-  .md\:animate-wiggle {
-    -webkit-animation: wiggle 3s ease-in-out infinite;
-            animation: wiggle 3s ease-in-out infinite;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -869,6 +914,16 @@ font-family: 'Vazirmatn', sans-serif;*/
     padding-bottom: 0px;
   }
 
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -881,6 +936,11 @@ font-family: 'Vazirmatn', sans-serif;*/
 
   .md\:text-\[54px\] {
     font-size: 54px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-4xl {

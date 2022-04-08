@@ -23,6 +23,8 @@ body {
 }
 
 .subheading {
+  font-family: 'Source Sans Pro', sans-serif;
+
 
 
 
@@ -33,6 +35,7 @@ input {
 .heading {
   /* font-family: 'Libre Baskerville', serif; */
 
+  font-family: 'Libre Baskerville', serif;
 
 
 
@@ -40,6 +43,7 @@ input {
 }
 .call{
 
+  font-family: 'Source Sans Pro', sans-serif;
 
 
 
