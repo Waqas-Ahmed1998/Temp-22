@@ -472,14 +472,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-\[7\%\] {
-  top: 7%;
-}
-
-.top-\[5\%\] {
-  top: 5%;
-}
-
 .top-\[0\%\] {
   top: 0%;
 }
@@ -583,10 +575,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-t-lg {
@@ -707,10 +695,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .italic {
   font-style: italic;
 }
@@ -728,11 +712,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#2d2d2d\] {
-  --tw-text-opacity: 1;
-  color: rgb(45 45 45 / var(--tw-text-opacity));
 }
 
 .text-\[\#fbf9f9\] {
@@ -853,10 +832,6 @@ font-family: 'Vazirmatn', sans-serif;*/
 }
 
 @media (min-width: 370px) {
-  .iphone6\:top-\[15\%\] {
-    top: 15%;
-  }
-
   .iphone6\:top-\[10\%\] {
     top: 10%;
   }
@@ -869,6 +844,10 @@ font-family: 'Vazirmatn', sans-serif;*/
 
   .md\:top-auto {
     top: auto;
+  }
+
+  .md\:h-\[90vh\] {
+    height: 90vh;
   }
 
   .md\:w-\[80\%\] {
