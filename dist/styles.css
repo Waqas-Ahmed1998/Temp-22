@@ -505,6 +505,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -515,6 +531,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .w-full {
@@ -631,6 +651,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(58 12 163 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#eaff00\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 255 0 / var(--tw-bg-opacity));
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -654,6 +679,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-5 {
@@ -717,6 +747,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#fbf9f9\] {
   --tw-text-opacity: 1;
   color: rgb(251 249 249 / var(--tw-text-opacity));
+}
+
+.text-\[\#060606\] {
+  --tw-text-opacity: 1;
+  color: rgb(6 6 6 / var(--tw-text-opacity));
+}
+
+.text-\[\#ffffff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -846,6 +886,14 @@ font-family: 'Vazirmatn', sans-serif;*/
     top: auto;
   }
 
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .md\:h-\[90vh\] {
     height: 90vh;
   }
@@ -908,6 +956,11 @@ font-family: 'Vazirmatn', sans-serif;*/
     padding-right: 2.5rem;
   }
 
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -934,5 +987,16 @@ font-family: 'Vazirmatn', sans-serif;*/
 
   .md\:leading-\[1\.2\] {
     line-height: 1.2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-\[54px\] {
+    font-size: 54px;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
