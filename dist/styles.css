@@ -517,16 +517,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.aspect-video {
-  aspect-ratio: 16 / 9;
+.aspect-auto {
+  aspect-ratio: auto;
 }
 
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
 
-.aspect-auto {
-  aspect-ratio: auto;
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .w-full {
@@ -650,6 +654,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-10 {
@@ -872,22 +880,6 @@ font-family: 'Vazirmatn', sans-serif;*/
     margin-top: 4rem;
   }
 
-  .md\:h-\[80\%\] {
-    height: 80%;
-  }
-
-  .md\:h-\[70\%\] {
-    height: 70%;
-  }
-
-  .md\:h-\[50\%\] {
-    height: 50%;
-  }
-
-  .md\:h-96 {
-    height: 24rem;
-  }
-
   .md\:h-\[28rem\] {
     height: 28rem;
   }
@@ -932,6 +924,10 @@ font-family: 'Vazirmatn', sans-serif;*/
 
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:py-5 {
