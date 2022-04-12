@@ -517,16 +517,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
 
-.h-64 {
-  height: 16rem;
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
 }
 
 .w-full {
@@ -757,14 +757,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.transition-all {
-  transition-property: all;
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -857,16 +857,6 @@ font-family: 'Vazirmatn', sans-serif;*/
   outline-offset: 2px;
 }
 
-.group:hover .group-hover\:aspect-video {
-  aspect-ratio: 16 / 9;
-}
-
-.group:hover .group-hover\:scale-\[1\.2\] {
-  --tw-scale-x: 1.2;
-  --tw-scale-y: 1.2;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 @media (min-width: 319px) {
   .xs\:m-1 {
     margin: 0.25rem;
@@ -882,8 +872,24 @@ font-family: 'Vazirmatn', sans-serif;*/
     margin-top: 4rem;
   }
 
+  .md\:h-\[80\%\] {
+    height: 80%;
+  }
+
+  .md\:h-\[70\%\] {
+    height: 70%;
+  }
+
+  .md\:h-\[50\%\] {
+    height: 50%;
+  }
+
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-\[28rem\] {
+    height: 28rem;
   }
 
   .md\:w-\[80\%\] {
@@ -922,6 +928,10 @@ font-family: 'Vazirmatn', sans-serif;*/
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:py-5 {
